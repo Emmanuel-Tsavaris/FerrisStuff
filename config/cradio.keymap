@@ -70,8 +70,8 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   ~      │   `      │    [     │   {      │    (     │   │    )     │    }     │  ]       │   ^      │          │
-            &kp TILDE  &kp GRAVE &kp LBKT   &kp LBRC   &kp LPAR      &kp RPAR   &kp RBRC   &kp RBKT    &kp CARET   &trans
+        //│   `      │    [     │   {      │    (     │          │   │          │    )     │    }     │  ]       │   ^      │
+            &kp GRAVE  &kp LBKT   &kp LBRC   &kp LPAR     &trans        &trans   &kp RPAR   &kp RBRC   &kp RBKT    &kp CARET 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  \       │   ;      │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp BSLH   &kp SEMI
