@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <150>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
@@ -59,8 +59,8 @@
         //│ CAPS     │  4       │  5       │  6       │  DELETE  │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │   ENTER  │
            &caps_word  &kp N4     &kp N5     &kp N6     &kp DEL       &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│   TAB    │  7       │  8       │  9       │  0       │   │PRINT SCR │          │          │    F8    │    F12   │
-           &kp TAB     &kp N7     &kp N8     &kp N9     &kp N0         &kp PSCRN   &trans     &trans     &kp F8     &kp F12
+        //│   TAB    │  7       │  8       │  9       │  0       │   │PRINT SCR │          │    F8    │    F12   │          │
+           &kp TAB     &kp N7     &kp N8     &kp N9     &kp N0         &kp PSCRN   &trans     &kp F8     &kp F12     trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
