@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
-#define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RCTRL k2  &ht RALT k3  &ht RSHFT k4
+#define HRML(k1,k2,k3,k4) &ht LSHFT k1 &ht LCTRL k2  &ht LGUI k3 &ht LALT k4
+#define HRMR(k1,k2,k3,k4) &ht RALT k1  &ht RGUI k2  &ht RCTRL k3  &ht RSHFT k4
 
 / {
     behaviors {
@@ -43,7 +43,7 @@
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          |  Z       │  X       │  C       │  V       │   | B        │  N       │  M       │ , <      │. >(RShift)│
-           &kp LSHFT  &kp Z     &kp X      &kp C      &kp V            &kp B     &kp N      &kp M      &kp COMMA  &lt RSHFT DOT
+           &kp LSHFT  &kp Z     &kp X      &kp C      &kp V            &kp B     &kp N      &kp M      &kp COMMA  &mt RSHFT DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp LSHFT  &lt 2 SPACE    &lt 1 SPACE &kp RSHFT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -70,14 +70,14 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│   `      │    [     │   {      │    (     │    /     │   │    \     │    )     │    }     │  ]       │   :      │
-            &kp GRAVE  &kp LBKT   &kp LBRC   &kp LPAR   &kp FSLH       &kp BSLH   &kp RPAR   &kp RBRC   &kp RBKT   &kp COLON 
+        //│   `      │    [     │   {      │    (     │    <     │   │    >     │    )     │    }     │  ]       │   :      │
+            &kp GRAVE  &kp LBKT   &kp LBRC   &kp LPAR   &kp LT          &kp GT   &kp RPAR   &kp RBRC   &kp RBKT   &kp COLON 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  !       │  @       │  #       │  $       │  %       │   │  *       │  -       │  =       │  ^       │   ;      │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp MINUS  &kp EQUAL  &kp CARET   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ~       │          │          │          │          │   │  &       │  _       │  +       │  │       │    ?     │
-            &kp TILDE  &trans     &trans     &trans     &trans         &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
+        //│  ~       │          │          │    /     │    \     │   │  &       │  _       │  +       │  │       │    ?     │
+            &kp TILDE  &trans     &trans     &kp FSLH   &kp BSLH      &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
