@@ -54,7 +54,7 @@
         //│          |  Z       │  X       │  C       │  V       │   | B        │  N       │  M       │ , <      │ . >      │
             &kp LCTRL   &kp Z      &kp X      &kp C      &kp V         &kp B     &kp N      &kp M      &kp COMMA   &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                        &ht LSHFT SPACE &ht 2 SPACE  &ht 1 SPACE &ht RSHFT SPACE
+                                        &ht LSHFT SPACE &lt 2 SPACE  &lt 1 SPACE &ht RSHFT SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
