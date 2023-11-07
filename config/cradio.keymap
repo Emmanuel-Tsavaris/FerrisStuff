@@ -9,6 +9,10 @@
 #define HRML(k1,k2,k3,k4) &ht LSHFT k1 &ht LCTRL k2  &ht LGUI k3 &ht LALT k4
 #define HRMR(k1,k2,k3,k4) &ht RALT k1  &ht RGUI k2  &ht RCTRL k3  &ht RSHFT k4
 
+&lt {
+    tapping-term-ms = <160>;
+};
+
 / {
     behaviors {
         ht: hold_tap {
@@ -22,11 +26,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    &lt {
-        flavor = "tap-preferred";
-        tapping-term-ms = <160>;
-        require-prior-idle-ms = <100>;
-    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
