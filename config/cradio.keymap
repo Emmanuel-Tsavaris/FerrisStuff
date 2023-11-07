@@ -13,6 +13,10 @@
     tapping-term-ms = <150>;
 };
 
+&mt {
+    tapping-term-ms = <150>;
+};
+
 / {
     behaviors {
         ht: hold_tap {
@@ -46,8 +50,8 @@
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
             HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          |  Z       │  X       │  C       │  V       │   | B        │  N       │  M       │ , <      │. >(RShift)│
-           &kp LSHFT  &kp Z     &kp X      &kp C      &kp V            &kp B     &kp N      &kp M      &kp COMMA  &mt RSHFT DOT
+        //│LEFT SHIFT|  Z       │  X       │  C       │  V       │   | B        │  N       │  M       │ , <      │ . >      │
+           &kp LSHFT  &kp Z     &kp X      &kp C      &kp V            &kp B     &kp N      &kp M      &kp COMMA  &kp DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                        &mt LSHFT SPACE &lt 2 SPACE   &lt 1 SPACE &mt RSHFT SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -117,7 +121,7 @@
         //│          |  Z       │  X       │  C       │  V       │   | B        │  N       │  M       │ , <      │. >(RShift)│
             &kp LCTRL  &kp Z     &kp X      &kp C      &kp V            &kp B     &kp N      &kp M      &kp COMMA  &mt RSHFT DOT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &mo  5      &kp SPACE      &kp  SPACE  &tog 4
+                                            &mo  5      &kp SPACE      &kp SPACE  &tog 4
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
